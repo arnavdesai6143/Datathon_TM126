@@ -1,0 +1,33 @@
+CTG COMPLETE ANALYSIS REPORT
+==================================================
+
+DATA CLEANING SUMMARY:
+------------------------------
+• Data loaded successfully: Shape: (2129, 46)
+• Column names cleaned: Total columns: 42
+• Removed leakage columns: Dropped: ['CLASS', 'A', 'B', 'C', 'D', 'E', 'AD', 'DE', 'LD', 'FS', 'SUSP']
+• Duplicates removed: Removed 128 duplicate rows
+• Medical range validation: Corrected: {'UC': np.int64(1), 'FM': np.int64(29), 'mLTV': np.int64(1)}
+• Invalid NSP values removed: Removed 1 rows
+• Outliers handled: Features with outliers: 19
+• Data quality features created: Added quality indicators
+• Final validation complete: Final shape: (2000, 36)
+
+
+KEY INSIGHTS:
+------------------------------
+• 🔴 65.3% of pathologic cases have low ALTV (≤0.00)
+• 🔴 67.1% of pathologic cases have low mLTV (≤4.47)
+• 🔴 Bradycardia (<110 bpm) shows 21.4% pathologic rate
+• ✅ Reassuring pattern (normal baseline + accelerations + good variability) shows 98.6% normal rate
+
+
+FINAL STATISTICS:
+------------------------------
+Total samples: 2000
+Total features: 36
+
+NSP Distribution:
+  Class 1: 1568
+  Class 2: 265
+  Class 3: 167
