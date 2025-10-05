@@ -11,20 +11,16 @@ A multi-model machine learning pipeline for detecting fetal distress from cardio
 1. [Overview](#overview)
 2. [Problem Statement](#problem-statement)
 3. [Results Summary](#results-summary)
-4. [Repository Structure](#repository-structure)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Dataset Information](#dataset-information)
-8. [Methodology](#methodology)
-9. [Model Architecture](#model-architecture)
-10. [Evaluation Metrics](#evaluation-metrics)
-11. [Key Features & Clinical Interpretation](#key-features--clinical-interpretation)
-12. [Files Generated](#files-generated)
-13. [Submission Deliverables](#submission-deliverables)
-14. [Technical Details](#technical-details)
-15. [Troubleshooting](#troubleshooting)
-16. [Acknowledgments](#acknowledgments)
-17. [License](#license)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Dataset Information](#dataset-information)
+7. [Methodology](#methodology)
+8. [Model Architecture](#model-architecture)
+9. [Evaluation Metrics](#evaluation-metrics)
+10. [Key Features & Clinical Interpretation](#key-features--clinical-interpretation)
+11. [Files Generated](#files-generated)
+12. [Technical Details](#technical-details)
+13. [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -279,7 +275,7 @@ F1-Score: Harmonic mean of precision & recall
 Most Critical Metric for Clinical Impact:
 Pathologic Recall = 87.88% → 29 out of 33 dangerous cases correctly identified.
 
-11. Key Features & Clinical Interpretation
+## 10. Key features & Clinical Interpretation
 Top 10 Most Important Features (Permutation Importance)
 Rank	Feature	Importance	Clinical Meaning
 1	ASTV	0.188	Abnormal short-term variability
@@ -299,7 +295,7 @@ High AC + normal baseline → Reassuring
 Multiple deceleration types → Concerning pattern
 This alignment with medical knowledge confirms model interpretability.
 
-## 10. Files Generated
+## 11. Files Generated
 1. During Training (train.py)
 models/
 a) Logistic_Regression_model.pkl
@@ -319,7 +315,7 @@ d) model_comparison.png
 e) per_class_recall.png
 
 
-13. Technical Details
+## 12. Technical Details
 Hyperparameter Tuning
 Method: RandomizedSearchCV
 
@@ -348,9 +344,9 @@ joblib.dump(estimator, 'models/model_name.pkl')
 Loading:
 model = joblib.load('models/model_name.pkl')
 
-## 11. Acknowledgements
-Dataset: UCI Machine Learning Repository
-Competition: MLDA@EEE Datathon 2025
-Theme: Lifeline – Fetal Distress Detection
+## 13. Acknowledgements
+ - Dataset: UCI Machine Learning Repository
+ - Competition: MLDA@EEE Datathon 2025
+ - Theme: Lifeline – Fetal Distress Detection
 
 
