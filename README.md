@@ -95,7 +95,7 @@ imbalanced-learn >= 0.9.0
 shap >= 0.40.0
 joblib
 
-6. Usage
+## 5. Usage
 Option 1: Run Complete Notebook (Recommended for Exploration)
 Open ctg_fetal_distress_classification.ipynb in:
 
@@ -140,7 +140,7 @@ Output:
 Console: Test metrics for all models
 Files: test_results.csv, confusion matrix PNGs
 
-7. Dataset Information
+## 6. Dataset Information
 Source
 UCI Machine Learning Repository - Cardiotocography Dataset
 
@@ -182,7 +182,7 @@ UC: Number of uterine contractions
 Histogram Features
 Width, Min, Max, Mode, Mean, Median, Variance, Tendency
 
-8. Methodology
+## 7. Methodology
 Three-Strategy Approach
 1. SMOTE Oversampling
 a) Generates synthetic minority class samples (Suspect, Pathologic)
@@ -201,7 +201,7 @@ b) Parameter:
 scoring='f1_macro'
 
 
-9. Model Architecture
+## 8. Model Architecture
 Pipeline Structure
 Input Data → StandardScaler → SMOTE → Classifier → Predictions
 
@@ -258,7 +258,7 @@ Early stopping: enabled
 Tuned Parameters:
 hidden_layer_sizes, alpha, learning_rate_init, batch_size
 
-10. Evaluation Metrics
+## 9. Evaluation Metrics
 Why Not Accuracy?
 With 78% Normal cases, a model predicting “Normal” for everything achieves 78% accuracy but has 0% recall for pathologic cases. This is clinically catastrophic.
 
@@ -299,7 +299,7 @@ High AC + normal baseline → Reassuring
 Multiple deceleration types → Concerning pattern
 This alignment with medical knowledge confirms model interpretability.
 
-12. Files Generated
+## 10. Files Generated
 1. During Training (train.py)
 models/
 a) Logistic_Regression_model.pkl
@@ -348,8 +348,7 @@ joblib.dump(estimator, 'models/model_name.pkl')
 Loading:
 model = joblib.load('models/model_name.pkl')
 
-
-14. Acknowledgments
+## 11. Acknowledgements
 Dataset: UCI Machine Learning Repository
 Competition: MLDA@EEE Datathon 2025
 Theme: Lifeline – Fetal Distress Detection
