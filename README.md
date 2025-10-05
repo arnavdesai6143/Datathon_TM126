@@ -73,37 +73,7 @@ Only 2 pathologic cases were misclassified as Normal.
 
 ---
 
-## 4. Repository Structure
-
-ctg-fetal-distress-classification/
-│
-├── README.md # This file
-├── requirements.txt # Python dependencies
-├── train.py # Training script
-├── test.py # Inference/testing script
-├── ctg_fetal_distress_classification.ipynb # Complete Jupyter notebook
-│
-├── data/
-│ ├── CTG.xls # Raw UCI CTG dataset
-│ └── ctg_cleaned.csv # Preprocessed data
-│
-├── results/
-│ ├── cv_results.csv # Cross-validation scores
-│ ├── test_results.csv # Final test performance
-│ ├── feature_importance.csv # Feature rankings
-│ └── visualizations/
-│ ├── Logistic_Regression_confusion_matrix.png
-│ ├── Random_Forest_confusion_matrix.png
-│ ├── Gradient_Boosting_confusion_matrix.png
-│ ├── MLP_Neural_Network_confusion_matrix.png
-│ ├── feature_importance.png
-│ ├── model_comparison.png
-│ └── per_class_recall.png
-│
-└── docs/academic_report.pdf # Technical report
-└── demo/demo_video.mp4
-
-## 5. Installation
+## 4. Installation
 
 ### Prerequisites
 - Python 3.7 or higher  
